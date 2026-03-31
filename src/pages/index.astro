@@ -1,18 +1,11 @@
 ---
+import Layout from "../layouts/layout.astro"
 import Converter from "../components/Converter.astro"
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Converter</title>
-	</head>
-	<body>
-		<h1>Conversor de unidades</h1>
+<Layout>
+	<div class="p-12 flex flex-col items-center gap-12">
+		<p class="font-semibold text-3xl">Conversor de unidades</p>
 		<Converter />
-	</body>
-</html>
+	</div>
+</Layout>
