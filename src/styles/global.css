@@ -3,3 +3,9 @@
 body {
     font-family: 'Roboto', sans-serif;
 }
+
+th, tr, td {
+    text-align: center;
+    padding: 8px;
+    border: 1px solid black;
+}

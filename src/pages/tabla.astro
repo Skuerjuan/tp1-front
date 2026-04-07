@@ -1,0 +1,116 @@
+---
+import Layout from "../layouts/layout.astro"
+---
+
+<Layout>
+    <div class="p-12 flex flex-col items-center gap-12">
+        <p class="font-semibold text-3xl">Tabla de conversiones</p>
+        <div class="flex gap-4 p-8 gap-x-4">
+            <div class="bg-gray-300 p-4 rounded-md">
+                <label for="tablaLongitud">Longitud</label>
+                <table id="tablaLongitud" class="table-auto border-collapse border border-gray-400">
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Unidad</th>
+                        <th>Equivalencia a metros</th>
+                    </tr>
+                    <tr>
+                        <td>Milímetro</td>
+                        <td>mm</td>
+                        <td>0.001 m</td>
+                    </tr>
+                    <tr>
+                        <td>Centímetro</td>
+                        <td>cm</td>
+                        <td>0.01 m</td>
+                    </tr>
+                    <tr>
+                        <td>Metro</td>
+                        <td>m</td>
+                        <td>1 m</td>
+                    </tr>
+                    <tr>
+                        <td>Kilómetro</td>
+                        <td>km</td>
+                        <td>1000 m</td>
+                    </tr>
+                    <tr>
+                        <td>Milla</td>
+                        <td>mi</td>
+                        <td>1609.34 m</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="bg-gray-300 p-4 rounded-md">
+                <label for="tablaMasa">Masa</label>
+                <table id="tablaMasa" class="table-auto border-collapse border border-gray-400">
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Unidad</th>
+                        <th>Equivalencia a gramos</th>
+                    </tr>
+                    <tr>
+                        <td>Miligramo</td>
+                        <td>mg</td>
+                        <td>0.001 g</td>
+                    </tr>
+                    <tr>
+                        <td>Gramo</td>
+                        <td>g</td>
+                        <td>1 g</td>
+                    </tr>
+                    <tr>
+                        <td>Kilogramo</td>
+                        <td>kg</td>
+                        <td>1000 g</td>
+                    </tr>
+                    <tr>
+                        <td>Libra</td>
+                        <td>lb</td>
+                        <td>453.59 g</td>
+                    </tr>
+                    <tr>
+                        <td>Tonelada</td>
+                        <td>ton</td>
+                        <td>1e+6 g</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="bg-gray-300 p-4 rounded-md">
+                <label for="tablaVolumen">Volumen</label>
+                <table id="tablaVolumen" class="table-auto border-collapse border border-gray-400">
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Unidad</th>
+                        <th>Equivalencia a litros</th>
+                    </tr>
+                    <tr>
+                        <td>Mililitro</td>
+                        <td>mL</td>
+                        <td>0.001 L</td>
+                    </tr>
+                    <tr>
+                        <td>Litro</td>
+                        <td>L</td>
+                        <td>1 L</td>
+                    </tr>
+                    <tr>
+                        <td>Metro cúbico</td>
+                        <td>m3</td>
+                        <td>1000 L</td>
+                    </tr>
+                    <tr>
+                        <td>Pie cúbico</td>
+                        <td>ft3</td>
+                        <td>28.3168 L</td>
+                    </tr>
+                    <tr>
+                        <td>Galón</td>
+                        <td>gal</td>
+                        <td>3.78541 L</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+</Layout>
