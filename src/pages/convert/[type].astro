@@ -15,5 +15,9 @@ export function getStaticPaths() {
     <div class="p-12 flex flex-col items-center gap-12">
         <p class="font-semibold text-3xl">Conversor de {Astro.params.type ? Astro.params.type.charAt(0).toUpperCase() + Astro.params.type.slice(1) : ""}</p>
         <Converter tipo={Astro.params.type} />
+        <div class="flex gap-8">
+            <a href="/" class="px-4 py-2 rounded-md bg-sky-600 text-white shadow-md hover:bg-sky-700">Volver</a>
+            <a href="/tabla" class="px-4 py-2 rounded-md bg-sky-600 text-white shadow-md hover:bg-sky-700">Ver tabla de conversiones</a>
+        </div>
     </div>
 </Layout>

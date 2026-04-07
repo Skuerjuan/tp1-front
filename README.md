@@ -9,5 +9,6 @@
 - Los botones cambian de color con el hover
 - Usa Tailwind
 - Usa un fetch a una API en la pantalla principal 
+- Deployado en Vercel (ver en repo)
 ---
 ### La página web se puede ejecutar al descargar las dependencias necesarias con 'npm i' y después usando 'npm run dev'.
