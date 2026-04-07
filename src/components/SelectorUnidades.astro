@@ -1,11 +1,35 @@
 ---
 const { id } = Astro.props; 
+const { tipo } = Astro.props as { tipo: string };
+
+const escalas: Record<string, Record<string, number>> = {
+    "masa": {
+        "g": 1,
+        "kg": 1000,
+        "mg": 0.001,
+        "lb": 453.59,
+        "ton": 1e+6
+    },
+    "longitud": {
+        "m": 1,
+        "km": 1000,
+        "cm": 0.01,
+        "mm": 0.001,
+        "mi": 1609.34,
+    },
+    "volumen": {
+        "L": 1,
+        "mL": 0.001,
+        "m3": 1000,
+        "ft3": 28.3168,
+        "gal": 3.78541,
+        "cm3": 0.001
+    }
+};
 ---
 
-<select name="unidades" id= { id } class="rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring p-2">
-    <option value="kg">kg</option>
-    <option value="g">g</option>
-    <option value="mg">mg</option>
-    <option value="lb">lb</option>
-    <option value="ton">ton</option>
+<select name="unidades" id= { id } class="rounded-md border border-gray-500 shadow-sm focus:border-indigo-800 focus:ring p-2">
+    {Object.keys(escalas[tipo]).map(unidad => (
+        <option value={unidad}>{unidad}</option>
+    ))}
 </select>
